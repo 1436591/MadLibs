@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="101.0" prefWidth="313.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.madlibs.selectController">
+   <children>
+      <Label layoutX="24.0" layoutY="1.0" maxWidth="1.7976931348623157E308" text="Please Select Your MadLib Below.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="selectLibMenuButton" layoutX="109.0" layoutY="35.0" mnemonicParsing="false" styleClass="selectLibButton" text="MadLibs!">
+        <items>
+          <MenuItem id="halloweenAction" fx:id="halloweenButton" mnemonicParsing="false" onAction="#halloweenAction" text="Halloween" />
+          <MenuItem fx:id="christmasButton" mnemonicParsing="false" onAction="#christmasAction" text="Christmas" />
+            <MenuItem id="julyAction" fx:id="julyButton" mnemonicParsing="false" onAction="#julyAction" text="4th of July" />
+            <MenuItem id="thanksAction" fx:id="thanksButton" mnemonicParsing="false" onAction="#thanksAction" text="Thanksgiving" />
+            <MenuItem fx:id="easterButton" mnemonicParsing="false" onAction="#easterAction" text="Easter" />
+        </items>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </MenuButton>
+   </children>
+</AnchorPane>
